@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		FEB2B5731E6B9889003C7CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2B5721E6B9889003C7CF1 /* AppDelegate.swift */; };
-		FEB2B5751E6B9889003C7CF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2B5741E6B9889003C7CF1 /* ViewController.swift */; };
+		FEB2B5751E6B9889003C7CF1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2B5741E6B9889003C7CF1 /* MainViewController.swift */; };
 		FEB2B5781E6B9889003C7CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB2B5761E6B9889003C7CF1 /* Main.storyboard */; };
 		FEB2B57A1E6B9889003C7CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB2B5791E6B9889003C7CF1 /* Assets.xcassets */; };
 		FEB2B57D1E6B9889003C7CF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB2B57B1E6B9889003C7CF1 /* LaunchScreen.storyboard */; };
+		FEB2B5861E6B98C7003C7CF1 /* ParallaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2B5841E6B98C7003C7CF1 /* ParallaxCell.swift */; };
+		FEB2B5871E6B98C7003C7CF1 /* ParallaxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB2B5851E6B98C7003C7CF1 /* ParallaxCell.xib */; };
+		FEB2B58C1E6BA1C0003C7CF1 /* Cocogoose.otf in Resources */ = {isa = PBXBuildFile; fileRef = FEB2B58B1E6BA1C0003C7CF1 /* Cocogoose.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FEB2B56F1E6B9889003C7CF1 /* SimpleParallax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleParallax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB2B5721E6B9889003C7CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEB2B5741E6B9889003C7CF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEB2B5741E6B9889003C7CF1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FEB2B5771E6B9889003C7CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEB2B5791E6B9889003C7CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEB2B57C1E6B9889003C7CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEB2B57E1E6B9889003C7CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEB2B5841E6B98C7003C7CF1 /* ParallaxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxCell.swift; sourceTree = "<group>"; };
+		FEB2B5851E6B98C7003C7CF1 /* ParallaxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParallaxCell.xib; sourceTree = "<group>"; };
+		FEB2B58B1E6BA1C0003C7CF1 /* Cocogoose.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cocogoose.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		FEB2B5711E6B9889003C7CF1 /* SimpleParallax */ = {
 			isa = PBXGroup;
 			children = (
+				FEB2B5891E6BA1A8003C7CF1 /* Supporting Files */,
 				FEB2B5721E6B9889003C7CF1 /* AppDelegate.swift */,
-				FEB2B5741E6B9889003C7CF1 /* ViewController.swift */,
+				FEB2B5741E6B9889003C7CF1 /* MainViewController.swift */,
 				FEB2B5761E6B9889003C7CF1 /* Main.storyboard */,
 				FEB2B5791E6B9889003C7CF1 /* Assets.xcassets */,
 				FEB2B57B1E6B9889003C7CF1 /* LaunchScreen.storyboard */,
 				FEB2B57E1E6B9889003C7CF1 /* Info.plist */,
+				FEB2B5881E6B9955003C7CF1 /* ParallaxCell */,
 			);
 			path = SimpleParallax;
+			sourceTree = "<group>";
+		};
+		FEB2B5881E6B9955003C7CF1 /* ParallaxCell */ = {
+			isa = PBXGroup;
+			children = (
+				FEB2B5841E6B98C7003C7CF1 /* ParallaxCell.swift */,
+				FEB2B5851E6B98C7003C7CF1 /* ParallaxCell.xib */,
+			);
+			name = ParallaxCell;
+			sourceTree = "<group>";
+		};
+		FEB2B5891E6BA1A8003C7CF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEB2B58A1E6BA1B8003C7CF1 /* Fonts */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEB2B58A1E6BA1B8003C7CF1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FEB2B58B1E6BA1C0003C7CF1 /* Cocogoose.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +159,8 @@
 			files = (
 				FEB2B57D1E6B9889003C7CF1 /* LaunchScreen.storyboard in Resources */,
 				FEB2B57A1E6B9889003C7CF1 /* Assets.xcassets in Resources */,
+				FEB2B58C1E6BA1C0003C7CF1 /* Cocogoose.otf in Resources */,
+				FEB2B5871E6B98C7003C7CF1 /* ParallaxCell.xib in Resources */,
 				FEB2B5781E6B9889003C7CF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +172,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB2B5751E6B9889003C7CF1 /* ViewController.swift in Sources */,
+				FEB2B5861E6B98C7003C7CF1 /* ParallaxCell.swift in Sources */,
+				FEB2B5751E6B9889003C7CF1 /* MainViewController.swift in Sources */,
 				FEB2B5731E6B9889003C7CF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

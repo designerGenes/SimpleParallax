@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cocogoose.otf">
+            <string>COCOGOOSE</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="314" id="KGk-i7-Jjw" customClass="ParallaxCell" customModule="SimpleParallax" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="314"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="313"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eCa-nD-Bfg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="313.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMPORTANT HEADLINE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkO-ni-Qts">
+                        <rect key="frame" x="49.5" y="138" width="294.5" height="38"/>
+                        <fontDescription key="fontDescription" name="COCOGOOSE" family="COCOGOOSE" pointSize="24"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.0" alpha="0.84999999999999998" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="4" height="3"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eCa-nD-Bfg" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="6DG-nd-ZIh"/>
+                    <constraint firstItem="eCa-nD-Bfg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9L2-nb-yCC"/>
+                    <constraint firstItem="GkO-ni-Qts" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UF6-Gw-RFo"/>
+                    <constraint firstItem="eCa-nD-Bfg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Y6n-Ik-vsI"/>
+                    <constraint firstAttribute="bottom" secondItem="eCa-nD-Bfg" secondAttribute="bottom" id="c5U-2N-pxE"/>
+                    <constraint firstItem="GkO-ni-Qts" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="yAk-W5-sBn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headlineLabel" destination="GkO-ni-Qts" id="kkb-41-uUB"/>
+                <outlet property="imageViewBottomConstraint" destination="c5U-2N-pxE" id="Orb-31-p7b"/>
+                <outlet property="imageViewTopConstraint" destination="9L2-nb-yCC" id="wVz-47-vBn"/>
+                <outlet property="offsetImageView" destination="eCa-nD-Bfg" id="PzF-AM-6Qn"/>
+            </connections>
+            <point key="canvasLocation" x="70.5" y="109"/>
+        </tableViewCell>
+    </objects>
+</document>
